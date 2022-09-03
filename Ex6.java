@@ -15,16 +15,12 @@ public class Ex6 {
 			vetor[i] = sc.nextInt();
 		}
 		
-		System.out.println("Insira o indice a ser buscado");
-		int indice = sc.nextInt();
+		System.out.println("Insira o número a ser buscado");
+		int num = sc.nextInt();
 		
-		if(indice > 0 && indice < 10) {
-			int numero = vetor[indice];
-			
-			for(int i = 1; i <= numero; i++) {
-				if(numero % i == 0) {
-					System.out.println(i);
-				}
+		for(int numero: vetor) {
+			if(numero % num == 0 ) {
+				System.out.println(numero);
 			}
 		}
 		
